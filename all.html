@@ -5,137 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подработка для студентов</title>
     <style>
-        /* Общие стили */
-:root {
-    --primary-color: #9b05c5; /* Основной фиолеовый */
-    --secondary-color: #67189c; /* Фиолетовый для кнопки зп*/
-    --dark-bg: #2f4458;
-    --light-bg: #a673be;
-    --text-color: #333;
-}
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--light-bg);
-    color: var(--text-color);
-}
-
-/* Шапка */
-header {
-    background: linear-gradient(135deg, var(--primary-color), #2980b9);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-/* Навигация по сайту */
-
-nav {
-    background: rgb(0, 206, 209);
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 1;
-    box-shadow: 0 2px 10px rgba(40, 36, 36, 0.1);
-    z-index: 1000;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark-bg);
-    margin: 0 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-}
-
-/* Сетка с карточками */
-.container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.jobs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-/* Стиль карточки подработки */
-.job-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.1s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.job-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(20, 13, 13, 0.1);
-}
-
-.job-info {
-    padding: 20px;
-    flex-grow: 1;
-}
-
-.job-info h3 {
-    margin-top: 0;
-    color: var(--primary-color);
-}
-
-.price {
-    display: inline-block;
-    background: var(--secondary-color);
-    color: rgb(243, 243, 243);
-    padding: 5px 12px;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.details {
-    font-size: 0.95rem;
-    color: #080108;
-    margin-bottom: 30px;
-}
-
-.btn:hover {
-    background: var(--dark-bg);
-}
-
-/* Футер */
-footer {
-    background: var(--dark-bg);
-    color: rgb(253, 253, 253);
-    text-align: center;
-    padding: 15px;
-    margin-top: 50px;
-}
-
-/* Для мобильных устройств */
-@media (max-width: 600px) {
-    header h1 { font-size: 1.8rem; }
-    .container { margin: 20px auto; }
-}
-    </style>
+    /* Общие стили */
+    :root {
+        --primary-color: #C71585; /* Основной фиолеовый */
+        --secondary-color: #5d178b; /* Фиолетовый для кнопки зп*/
+        --dark-bg: #000000;
+        --light-bg: #a673be;
+        --text-color: #4B0082;
+    }
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-bg);
+        color: var(--text-color);
+    }
+    
+    /* Шапка */
+    header {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: rgb(254, 254, 254);
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+     h2 {
+        margin: 20px;
+        padding: 10px 5px;
+    }
+    /* Навигация по сайту */
+    
+    nav {
+        background:repeating-linear-gradient(to right top,rgb(255, 255, 255),rgb(252, 248, 255));
+        padding: 15px;
+        text-align: center;
+        position: sticky;
+        top: 1;
+        box-shadow: 0 2px 10px rgb(201, 61, 206);
+        z-index: 1000;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--dark-bg);
+        margin: 0 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    nav a:hover {
+        color: var(--primary-color);
+    }
+    
+    /* Сетка с карточками */
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .jobs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    /* Стиль карточки подработки */
+    .job-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px rgba(63, 39, 39, 0.582);
+        transition: transform 0.1s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .job-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(20, 13, 13, 0.1);
+    }
+    
+    .job-info {
+        padding: 20px;
+        flex-grow: 1;
+    }
+    
+    .job-info h3 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+    
+    .price {
+        display: inline-block;
+        background: var(--secondary-color);
+        color: rgb(243, 243, 243);
+        padding: 5px 12px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .details {
+        font-size: 0.95rem;
+        color: #080108;
+        margin-bottom: 30px;
+    }
+    
+    .btn:hover {
+        background: var(--dark-bg);
+    }
+    
+    /* Футер */
+    footer {
+        background: var(--dark-bg);
+        color: rgb(253, 253, 253);
+        text-align: center;
+        padding: 15px;
+        margin-top: 50px;
+    }
+    
+    /* Для мобильных устройств */
+    @media (max-width: 600px) {
+        header h1 { font-size: 1.8rem; }
+        .container { margin: 20px auto; }
+    }
+        </style>
 </head>
 <body>
 
@@ -151,10 +155,9 @@ footer {
         <a href="practice.html">Практика</a>
     </nav>
 
-    <div class="container">
+
         <h2>Актуальные предложения:</h2>
-    
-        
+        <div class="container">    
         <div class="jobs-grid">
         
             
@@ -168,13 +171,15 @@ footer {
                         <li>Свободный график</li>
                         <li>Выплаты ежедневно</li>
                     </ul>
+                    <a href="https://gog.su/lDgZ">Ссылка на вакансию</a>
+                        <h5>Не забудьте указать свой город!!!</h5>
                 </div>
             </div>
 
            <!-- КАРТОЧКА2 -->
            <div class="job-card">
                  <div class="job-info">
-                    <span class="price">от 60 000 руб/мес</span>
+                    <span class="price">от 500 руб/час</span>
                     <h3>Промоутер-консультант</h3>
                     <p class="details">Раздача листовок и консультирование клиентов возле торговых центров. Опыт не требуется.</p>
                     <ul class="features">
@@ -182,8 +187,11 @@ footer {
                             <li>Различные бонусы за результат</li>
                             <li>Без опыта работы</li>
                     </ul>
+                    <a href="https://gog.su/DMQa">Ссылка на вакансию</a>
+                    <h5>Не забудьте указать свой город!!!</h5>
                 </div>
             </div>
+
             <!-- КАРТОЧКА3 -->
             <div class="job-card">
                 <div class="job-info">
@@ -195,10 +203,13 @@ footer {
                            <li>Различные бонусы за результат</li>
                            <li>Гибкий график</li>
                    </ul>
+                   <a href="https://gog.su/eRBT">Ссылка на вакансию</a>
+                   <h5>Не забудьте указать свой город!!!</h5>
                </div>
            </div>
+
             <!-- КАРТОЧКА4 -->
-           <div class="job-card">
+            <div class="job-card">
             <div class="job-info">
                <span class="price">от 4500 руб/смена</span>
                <h3>Разнорабочий или грузчик</h3>
@@ -207,11 +218,40 @@ footer {
                        <li>Смены по 4 часа</li>
                        <li>Различные бонусы за результат</li>
                </ul>
-
-
-
-               <script src="script.js"></script>
+               <a href="https://gog.su/0WP4">Ссылка на вакансию</a>
+               <h5>Не забудьте указать свой город!!!</h5>
            </div>
        </div>
 
-                
+            <!-- КАРТОЧКА5 -->
+            <div class="job-card">
+            <div class="job-info">
+               <span class="price">от 3500 руб/смена</span>
+               <h3>Бариста или помощник официанта</h3>
+               <p class="details">Работа в уютных кофейнях или ресторанах с обучением с нуля. Отличный вариант для тех, кто любит общение и хочет получать чаевые каждый день.</p>
+               <ul class="features">
+                       <li>Полная занятость или по гибкому графику</li>
+                       <li>В конце дня могут быть чаевые</li>
+               </ul>
+               <a href="https://gog.su/sLuu">Ссылка на вакансию</a>
+               <h5>Не забудьте указать свой город!!!</h5>
+           </div>
+       </div>
+
+            <!-- КАРТОЧКА5 -->
+            <div class="job-card">
+            <div class="job-info">
+               <span class="price">от 2000 руб/смена</span>
+               <h3>Мерчандайзер</h3>
+               <p class="details">Выкладка товаров на полки супермаркетов по четким инструкциям. Понятная работа со стабильной оплатой и удобным графиком в утренние или вечерние часы.</p>
+               <ul class="features">
+                       <li>Выплаты 2 раза в месяц</li>
+                       <li>Гибкий график</li>
+               </ul>
+               <a href="">Ссылка на вакансию</a>
+               <h5>Не забудьте указать свой город!!!</h5>
+           </div>
+       </div>
+
+</body>
+</html>             

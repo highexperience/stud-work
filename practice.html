@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <style>
+        /* Общие стили */
+:root {
+    --primary-color: #000000; /* Основной фиолеовый */
+    --secondary-color: #67189c; /* Фиолетовый для кнопки зп*/
+    --dark-bg: #000000;
+    --light-bg: #9b999c;
+    --text-color: #161414;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #5b5b5b);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+/* Навигация по сайту */
+
+nav {
+    background:repeating-linear-gradient(to right top,rgb(255, 255, 255),rgb(255, 255, 255));
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.989);
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-bg);
+    margin: 0 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Сетка с карточками */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Стиль карточки подработки */
+.job-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgb(55, 52, 52);
+    transition: transform 0.1s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(20, 13, 13, 0.1);
+}
+
+.job-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.job-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.price {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: rgb(243, 243, 243);
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.details {
+    font-size: 0.95rem;
+    color: #080108;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    background: var(--dark-bg);
+}
+
+/* Футер */
+footer {
+    background: var(--dark-bg);
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .container { margin: 20px auto; }
+}
+    </style>
+</head>
+<body>
+<header>
+  <h1>Практика для студентов </h1>
+</header>
+   <nav>
+    <a href="index.html">Главная</a>
+    <a href="all.html">Все вакансии</a>
+    <a href="remote.html">Удалённо</a>
+    <a href="contacts.html">Контакты</a>
+   </nav>
+
+  <div class="container">
+    <h2>Профильные организации для прохождения производственной практики:</h2>   
+
+<div class="jobs-grid">
+
+<div class="job-card">
+<div class="job-info">
+<span class="price">По договорённости</span>
+<h3>ООО "Агросервис"</h3>
+<p class="details">Отличный вариант практики для студентов СПО.</p>
+<ul class="features">
+<li>Занятость 6 часов</li>
+<li>Выплата по окончании практики</li>
+<li>Возможно трудоустройство при успешном прохождении практики</li>
+</ul>
+</div>
+</div>
+
+<div class="job-card">
+<div class="job-info">
+<span class="price">По договорённости</span>
+<h3>МБОУ СОШ №43</h3>
+<p class="details">Отличные рабочие условия, приятный рабочий персонал, автобусы от фирмы.</p>
+<ul class="features">
+<li>Занятость 6 часа</li>
+<li>Различные бонусы за результат</li>
+</ul>
+</div>
+</div>
+
+<div class="job-card">
+    <div class="job-info">
+    <span class="price">По договорённости</span>
+    <h3>ОАО РЖД ст.Несветай </h3>
+    <p class="details">Отличные рабочие условия, приятный рабочий персонал, автобусы от фирмы.</p>
+    <ul class="features">
+    <li>Смены по 6 часа</li>
+    <li>Различные бонусы за результат</li>
+    <li>Оплачиваемая практика</li>
+    </ul>
+    </div>
+    </div>
+
+<div class="job-card">
+<div class="job-info">
+<span class="price">По договорённости</span>
+<h3>ООО "Южные транспортные линии"</h3>
+<p class="details">Трудная, но хорошо оплачиваемая работа</p>
+<ul class="features">
+<li>Занятость по 8 часов</li>
+<li>Приятные рабочие условия</li>
+<li>Оплачиваемая практика</li>
+</ul>
+</div>
+</div>
+
+<div class="job-card">
+    <div class="job-info">
+    <span class="price">По договорённости</span>
+    <h3>МБОУ СОШ №24</h3>
+    <p class="details">Отличные рабочие условия, приятный рабочий персонал, автобусы от фирмы.</p>
+    <ul class="features">
+    <li>Занятость 6 часа</li>
+    <li>Различные бонусы за результат</li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="job-card">
+        <div class="job-info">
+        <span class="price">По договорённости</span>
+        <h3>МБОУ СОШ №9</h3>
+        <p class="details">Отличные рабочие условия, приятный рабочий персонал, автобусы от фирмы.</p>
+        <ul class="features">
+        <li>Занятость 6 часа</li>
+        <li>Различные бонусы за результат</li>
+        </ul>
+        </div>
+        </div>
+
+
+        
+</body>
