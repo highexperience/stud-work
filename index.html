@@ -62,6 +62,46 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+    /* Сетка с карточками */
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .jobs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    /* Стиль карточки подработки */
+    .job-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px rgba(63, 39, 39, 0.582);
+        transition: transform 0.1s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .job-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(20, 13, 13, 0.1);
+    }
+    
+    .job-info {
+        padding: 20px;
+        flex-grow: 1;
+    }
+    
+    .job-info h3 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+    
+
 .details {
     font-size: 0.95rem;
     color: #080108;
@@ -103,7 +143,11 @@ footer {
     <a href="contacts.html">Контакты</a>
     <a href="practice.html">Практика</a>
  </nav>
+  
+  <div class="container">
+  <div class="jobs-grid">
  
+    <div class="job-card">
     <h1>Твоё будущее начинается не после диплома, а прямо сейчас!</h1>
     <p class="lead">Студенчество — это не только лекции и зачеты. Это время, когда вы впервые понимаете цену своей независимости.
          Зачем ждать окончания колледжа, чтобы начать «настоящую жизнь»? Зачем ограничивать себя одной стипендией, если можно позволить себе больше уже сегодня?
